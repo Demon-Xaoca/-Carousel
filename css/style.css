@@ -4,11 +4,36 @@
 
 .carusel {
     background-color: #10c9c3;
-    padding: 160px; }
+    padding: 0;
+    position: relative;
+}
 .carusel .container {
     max-width: 1170px;
-    margin: auto; }
+    margin: auto;
+}
 .carusel .container p {
     text-align: center;
     font-size: 24px;
-    color: white; }
+    color: white;
+    padding: 160px;
+}
+.owl-nav .owl-prev:before {
+    display: inline-block;
+    content: "◀";
+    font-size: 35px;
+    color: aliceblue;
+}
+
+.owl-nav .owl-next:before{
+    display: inline-block;
+    content: "▶";
+    font-size: 35px;
+    color: aliceblue;
+}
+.owl-nav {
+    position: absolute;
+    width: 100%;
+    bottom: 50%;
+    display: flex;
+    justify-content:space-between;
+}
